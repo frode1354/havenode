@@ -1,0 +1,4 @@
+/* Base resets live in App.css via :root; keep this file for Vite defaults override */
+body {
+  margin: 0;
+}
