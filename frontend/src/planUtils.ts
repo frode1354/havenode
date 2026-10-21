@@ -421,6 +421,7 @@ export function toggleGrantList(list: string[], id: string, checked: boolean): s
 
 export const TOOL_CATALOG = [
   'ScrapeWebsiteTool',
+  'SeleniumScrapingTool',
   'SerperDevTool',
   'FileReadTool',
   'FileWriterTool',

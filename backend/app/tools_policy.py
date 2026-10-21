@@ -8,6 +8,7 @@ BANNED_TOOLS = frozenset({"WebsiteSearchTool"})
 ALLOWED_TOOLS = frozenset(
     {
         "ScrapeWebsiteTool",
+        "SeleniumScrapingTool",
         "SerperDevTool",
         "FileReadTool",
         "FileWriterTool",

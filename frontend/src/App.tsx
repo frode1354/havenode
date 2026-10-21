@@ -178,34 +178,6 @@ export default function App() {
     )
   }
 
-  function markStageRunning(id: string, detail?: string) {
-    const now = Date.now()
-    setPipelineStages((prev) =>
-      prev.map((s) => {
-        if (s.id === id) {
-          return {
-            ...s,
-            status: 'running',
-            detail: detail ?? s.detail,
-            startedAt: s.startedAt ?? now,
-            endedAt: undefined,
-            durationMs: undefined,
-          }
-        }
-        if (s.status === 'running' && s.id !== id) {
-          const ended = now
-          return {
-            ...s,
-            status: 'done',
-            endedAt: ended,
-            durationMs: s.startedAt ? ended - s.startedAt : s.durationMs,
-          }
-        }
-        return s
-      }),
-    )
-  }
-
   function markStageDone(id: string, detail?: string, durationMs?: number) {
     const now = Date.now()
     setPipelineStages((prev) =>

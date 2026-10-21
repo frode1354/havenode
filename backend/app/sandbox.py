@@ -38,6 +38,12 @@ def _tool_ctors() -> dict[str, Any]:
     except Exception:  # noqa: BLE001
         pass
     try:
+        from crewai_tools import SeleniumScrapingTool
+
+        ctors["SeleniumScrapingTool"] = SeleniumScrapingTool
+    except Exception:  # noqa: BLE001
+        pass
+    try:
         from crewai_tools import URLReadTool
 
         ctors["URLReadTool"] = URLReadTool

@@ -76,6 +76,13 @@ DEFAULT_TOOLS = [
         enabled=True,
     ),
     ToolSettings(
+        id="SeleniumScrapingTool",
+        name="SeleniumScrapingTool",
+        description="通过无头 Chrome 抓取 JavaScript 动态网页",
+        enabled=True,
+        note="需要本机安装 Chrome；仅用于获准访问的网站",
+    ),
+    ToolSettings(
         id="URLReadTool",
         name="URLReadTool",
         description="读取 URL / Google Drive 共享链接正文（需「任何有链接可查看」）",

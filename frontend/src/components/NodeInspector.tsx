@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { CrewPlan, GrantSpec, SelectKind, StartTrigger } from '../types'
-import { defaultRunPolicy, defaultSchedule, emptyGrants, ensurePlanTeams, ensureWorkflowPlan } from '../types'
+import { defaultRunPolicy, defaultSchedule, emptyGrants, ensureWorkflowPlan } from '../types'
 import {
   duplicateTeam,
   effectiveGrants,

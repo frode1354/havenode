@@ -62,6 +62,13 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     enabled: true,
   },
   {
+    id: 'SeleniumScrapingTool',
+    name: 'SeleniumScrapingTool',
+    description: '通过无头 Chrome 抓取 JavaScript 动态网页',
+    enabled: true,
+    note: '需要本机安装 Chrome；仅用于获准访问的网站',
+  },
+  {
     id: 'SerperDevTool',
     name: 'SerperDevTool',
     description: 'Google 搜索（需 SERPER_API_KEY）',
